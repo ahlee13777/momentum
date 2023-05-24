@@ -12,7 +12,7 @@ function getClock(){
 
 getClock();
 setInterval(getClock,1000); //(함수,interval(ms)) 반복실행
-//setTimeout(say,Hello, 5000) //1번만 실행
+//setTimeout(say,Hello, 5000) //1번실행ls.
 
 
 
