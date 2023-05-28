@@ -33,17 +33,17 @@ function handleToDoSubmit(event) {
     event.preventDefault(); //새고방지 
     const newToDo = toDoInput.value; //비우기전에 newToDo에 저장
     toDoInput.value=""; //네모칸 비우기
-    toDos.push(newToDo); //toDos에 newTodo넣기
-    paintToDo(newToDo); //newTodo 그리기
-    saveToDos(); //로컬에 저장
+    toDos.push(newToDo);
+    paintToDo(newToDo);
+    saveToDos();
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
 
+
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
 if (savedToDos){
-    const parsedToDos = JSON.parse(savedToDos); //string파싱
-    toDos = parsedToDos; //있으면 갖다쓰기 (새고 초기화 방지)
-    parsedToDos.forEach(paintToDo);
+    const partsedToDos = JSON.parse(savedToDos); //string파싱
+    partsedToDos.forEach(paintToDo);
 }

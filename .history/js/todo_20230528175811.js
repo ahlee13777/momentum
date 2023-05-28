@@ -44,6 +44,6 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 
 if (savedToDos){
     const parsedToDos = JSON.parse(savedToDos); //string파싱
-    toDos = parsedToDos; //있으면 갖다쓰기 (새고 초기화 방지)
+    toDos = parsedToDos; //있으면 넣기 (새고 초기화 방지)
     parsedToDos.forEach(paintToDo);
 }

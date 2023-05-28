@@ -35,7 +35,7 @@ function handleToDoSubmit(event) {
     toDoInput.value=""; //네모칸 비우기
     toDos.push(newToDo); //toDos에 newTodo넣기
     paintToDo(newToDo); //newTodo 그리기
-    saveToDos(); //로컬에 저장
+    saveToDos(); //
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
@@ -44,6 +44,6 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 
 if (savedToDos){
     const parsedToDos = JSON.parse(savedToDos); //string파싱
-    toDos = parsedToDos; //있으면 갖다쓰기 (새고 초기화 방지)
+    toDos = parsedToDos; 
     parsedToDos.forEach(paintToDo);
 }
