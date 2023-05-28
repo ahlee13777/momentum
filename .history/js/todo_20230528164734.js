@@ -5,7 +5,7 @@ const toDoList = document.getElementById("todo-list");
 const toDos = [];
 
 function saveToDos(){
-    localStorage.setItem("todos", toDos); //로컬스토리지 todos에 toDos 저장하기 
+    
 }
 
 function deleteToDo(event) {
@@ -33,7 +33,6 @@ function handleToDoSubmit(event) {
     toDoInput.value=""; //네모칸 비우기
     toDos.push(newToDo);
     paintToDo(newToDo);
-    saveToDos();
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
