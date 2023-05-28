@@ -9,8 +9,11 @@ function getClock(){
 
     //clock.innerText = `${date.getHoursdate.getMinutes()}:${date.getSeconds()}`;
     clock.innerText = `${hours}:${minutes}:${seconds}`;
-}
+}7
 
 getClock();
 setInterval(getClock,1000); //(함수,interval(ms)) 반복실행
 //setTimeout(say,Hello, 1000) //1번만 실행
+
+
+

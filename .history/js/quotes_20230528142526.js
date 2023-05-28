@@ -48,3 +48,5 @@ const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)]; //반올�
 
 quote.innerText = todaysQuote.quote;
 author.innerText = todaysQuote.author;
+
+console.log(quote[1]);
