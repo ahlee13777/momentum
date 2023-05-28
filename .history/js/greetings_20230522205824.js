@@ -62,7 +62,7 @@ link.addEventListener("click", handleLinkClick);
 /*
 아래 if문으로 감
 //loginButton.addEventListener("click", onLoginSubmit); 아래처럼 submit 사용
-loginForm.addEventListener("submit", onLoginSubmit); // submit은 기본적으로 console새고됨 (preventDefault로 막을 수 잇음)
+loginForm.addEventListener("submit", onLoginSubmit); // submit은 기본적으로 gconsole새고됨 (preventDefault로 막을 수 잇음)
 */
 
 const savedUsername = localStorage.getItem(USERNAME_KEY); 
