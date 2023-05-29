@@ -13,8 +13,6 @@ function saveToDos(){
 function deleteToDo(event) {
     const li = event.target.parentElement; //console.dir(event)해서 찾아냄
     li.remove();
-    toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id)); //toDos에있는 id가 li.id와 같으면 없애기
-    saveToDos();
 }
 
 function paintToDo(newToDoObj) {
@@ -54,5 +52,3 @@ if (savedToDos){
     toDos = parsedToDos; //있으면 갖다쓰기 (새고 초기화 방지)
     parsedToDos.forEach(paintToDo);
 }
-
-// [1,2,3,4].filter(function) true->element 유지, false->삭

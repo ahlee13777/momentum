@@ -14,7 +14,7 @@ function deleteToDo(event) {
     const li = event.target.parentElement; //console.dir(event)해서 찾아냄
     li.remove();
     toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id)); //toDos에있는 id가 li.id와 같으면 없애기
-    saveToDos();
+    saveToDos
 }
 
 function paintToDo(newToDoObj) {
